@@ -10,6 +10,7 @@
 
     <title>Frontend Mentor | [Blogr]</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
@@ -19,7 +20,46 @@
         <div class="header">
             <div class="nav">
                 <h1>Blogr</h1>
-                <img src="./images/icon-hamburger.svg">
+                <div style="display: flex; justify-content: center; align-items: center; width: 30px;">
+                    <img id="menuButton" src="./images/icon-hamburger.svg" onclick="openMenu()" alt="menu">
+                </div>
+            </div>
+            <div class="menu-closed" id="menu">
+                <div class="dropdown" id="dropdown">
+                    <label>Product</label>
+                    <img src="./images/icon-arrow-dark.svg" id="arrow" alt="arrow">
+                </div>
+                <div class="buttonContainer-closed">
+                    <a>Overview</a>
+                    <a>Pricing</a>
+                    <a>Marketplace</a>
+                    <a>Features</a>
+                    <a>Integrations</a>
+                </div>
+                <div class="dropdown" id="dropdown">
+                    <label>Company</label>
+                    <img src="./images/icon-arrow-dark.svg" id="arrow" alt="arrow">
+                </div>
+                <div class="buttonContainer-closed">
+                    <a>About</a>
+                    <a>Team</a>
+                    <a>Blog</a>
+                    <a>Careers</a>
+                </div>
+                <div class="dropdown" id="dropdown">
+                    <label>Connect</label>
+                    <img src="./images/icon-arrow-dark.svg" id="arrow" alt="arrow">
+                </div>
+                <div class="buttonContainer-closed">
+                    <a>Contact</a>
+                    <a>Newletter</a>
+                    <a>LinkedIn</a>
+                </div>
+                <div class="separateur">.</div>
+                <div class="buttons">
+                    <div class="button1"><a>Login</a></div>
+                    <div class="button2"><a>Sign Up</a></div>
+                </div>
             </div>
 
             <div class="description">
